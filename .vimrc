@@ -50,12 +50,6 @@ function! LoadCscope()
 endfunction
 au BufEnter /* call LoadCscope()
 
-"set cscopetag
-"set cst
-"set csto=0
-"set tags=./tags,tags;/
-"cs add cscope.out
-
 " Comments in 42-style format
 set comments=sl:/*,mb:**,ex:*/
 
@@ -74,4 +68,8 @@ ino { {}<left>
 "Switch on when copy-paste from the clipboard
 set pastetoggle=<F2>
 
+"Ctrl+i opens tag in new tab
 noremap <C-i> <C-w><C-]><C-w>T
+
+" Abbreviation type ':t main.c' instead of ':tabnew main.c'
+ca t tabnew
