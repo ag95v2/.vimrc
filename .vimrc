@@ -73,3 +73,7 @@ noremap <C-i> <C-w><C-]><C-w>T
 
 " Abbreviation type ':t main.c' instead of ':tabnew main.c'
 ca t tabnew
+
+" Ctrl + e in visual mode will enclose the selected text with parenthesis
+vmap <C-e> xi(<ESC>p
+
